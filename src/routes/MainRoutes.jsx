@@ -27,7 +27,7 @@ const MainRoutes = () => {
 
                 <Routes className='navigation'>
                 
-                    <Route exact path='/' element={
+                    <Route exact path='/todo-app' element={
                         loggedIn ? 
                             ( <Navigate replace to={'/tasks'} /> ) :
                             ( <Navigate replace to={'/login'} /> )
