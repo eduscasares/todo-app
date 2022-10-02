@@ -46,7 +46,7 @@ const MainRoutes = () => {
 
                     <Route exact path='/dashboard' element={
                         loggedIn ? 
-                            ( <Dashboard /> ) : 
+                            ( <TasksPage /> ) : 
                             ( <Navigate replace to={'/login'} /> )
                     } />
 
