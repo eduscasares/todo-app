@@ -1,0 +1,90 @@
+@import './fonts/import-fonts.css';
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+
+    main {
+        display: flex;
+
+        > div {
+            flex-basis: 100%;
+            padding: 40px;
+            background-color: #f8f8f9;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 40px;
+        min-width: 250px;
+        border-right: 1px solid #ddd;
+        justify-content: space-between;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                color: #333;
+                padding: 10px 0;
+                border-bottom: 1px solid #ddd;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+
+        }
+
+        .session-hanlder {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            border-top: 1px solid #ddd;
+            padding: 20px 0 0 0;
+            color: #000;
+            text-decoration: none;
+            font-size: 13px;
+
+            img {
+                max-width: 54px;
+                height: 54px;
+                object-fit: cover;
+                border-radius: 50px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+    button {
+        min-width: 75px;
+        padding: 7px 12px;
+        border: 1px solid rgb(212, 34, 228);
+        border-radius: 8px; 
+        cursor: pointer;
+
+        &.contained-button {
+            background-color: rgb(212, 34, 228);
+            color: white;
+        }
+
+        &.bordered-button {
+            color: rgb(212, 34, 228);
+            background-color: transparent;
+        }
+    }
+}

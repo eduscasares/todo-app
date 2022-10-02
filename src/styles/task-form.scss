@@ -1,0 +1,64 @@
+.form-container {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+
+    .task-form {
+        max-height: 350px;
+        max-width: 512px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 20px 50px;
+        margin: 0 auto;
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+    
+            input,
+            select {
+                border: 1px solid rgb(221, 221, 221);
+                padding: 8px 16px;
+                border-radius: 8px;
+                margin-bottom: 8px;
+            }
+        }
+    
+    }
+
+    &.hidden {
+        bottom: -100%;
+        height: 0;
+        padding: 0;
+        opacity: 0;
+        border: 0;
+        overflow: hidden;
+    }
+
+}
+
+

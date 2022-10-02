@@ -1,0 +1,85 @@
+.task-list-container {
+
+    // overflow: scroll;
+
+    .task-list {
+
+        // overflow: hidden;
+        height: 95%;
+
+        .card {
+
+            border: 0;
+            height: 100%;
+            background: transparent;
+        
+            &.empty {
+                background: url('../assets/images/papel-picado.png') no-repeat center;
+                background-size: 300px;
+            }
+
+            .task-table {
+                padding-top: 75px;
+                text-align: center;
+            }
+        }
+
+        .add-tasks {
+            position: fixed;
+            bottom: 4%;
+            right: 3%;
+        }
+
+        .filter-buttons {
+            button {
+                margin-right: 16px;
+            }
+        }
+    
+    }
+
+}
+
+.task-item {
+    position: relative;
+    background-color: white;     
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+    .badge {
+        padding: 4px 8px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+
+        &.warning {
+            background-color: rgb(255, 255, 7);
+        }
+
+        &.danger {
+            background-color: tomato;
+        }
+    }
+
+    p {
+        margin-bottom: 55px;
+        margin-right: 55px;
+    }
+
+    .task-complete {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .bi-trash {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+} 
