@@ -29,7 +29,7 @@ const MainRoutes = () => {
                 
                     <Route exact path='/' element={
                         loggedIn ? 
-                            ( <Navigate replace to={'/dashboard'} /> ) :
+                            ( <Navigate replace to={'/tasks'} /> ) :
                             ( <Navigate replace to={'/login'} /> )
                     } /> 
 
